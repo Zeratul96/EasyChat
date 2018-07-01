@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background_gray"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="新消息通知"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:padding="@dimen/layout_padding_space" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="接收新消息通知"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/list_text_size" />
+        <com.bs.widget.MyToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/notification_btn" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_height" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:padding="@dimen/layout_padding_space" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="通知显示详细消息"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/list_text_size" />
+        <com.bs.widget.MyToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/detail_btn" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+    <TextView
+        android:text="关闭后，当收到易聊消息时，通知提示将不显示发信人和内容摘要。"
+        android:padding="@dimen/view_padding_space"
+        android:textSize="@dimen/small_info_text_size"
+        android:layout_marginStart="@dimen/list_margin_start"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

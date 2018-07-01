@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="修改性别"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+
+        <TextView
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="@dimen/important_info_text_size"
+            android:textColor="@drawable/purple_btn_color"
+            android:clickable="true"
+            android:id="@+id/cancel_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="@drawable/purple_btn_color"
+            android:textSize="@dimen/important_info_text_size"
+            android:clickable="true"
+            android:enabled="false"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/list_margin_start"
+            android:id="@+id/finish_btn" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+
+    <!--内容区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/male_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="男"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:id="@+id/line1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/female_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="女"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line_gray"
+            android:layout_height="1px"
+            android:id="@+id/line2" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:id="@+id/window_layout">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="通讯录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+
+    </FrameLayout>
+
+    <com.bs.widget.ClearEditText
+        android:paddingStart="@dimen/setting_edit_padding"
+        android:paddingEnd="@dimen/setting_edit_padding"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="@dimen/setting_edit_padding"
+        android:layout_marginEnd="@dimen/setting_edit_padding"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:drawablePadding="15dp"
+        android:drawableRight="@drawable/gray_text_clear"
+        android:background="@color/white"
+        android:hint="搜索"
+        android:textColorHint="@color/gray_text"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:textColor="@color/black"
+        android:textSize="@dimen/info_text_size" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="@dimen/info_text_size"
+        android:textColor="@color/gray_text"
+        android:text="未搜索到匹配的联系人"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/layout_padding_space"
+        android:id="@+id/no_result" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <TextView
+            android:id="@+id/tvSideBarHint"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_side_bar_bg"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            android:visibility="gone"
+            tools:text="A"
+            tools:visibility="visible"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:paddingTop="@dimen/index_bar_padding"
+            android:paddingBottom="@dimen/index_bar_padding">
+
+            <com.mcxtzhang.indexlib.IndexBar.widget.IndexBar
+                android:id="@+id/indexBar"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                app:indexBarPressBackground="@color/partTranslucent"
+                app:indexBarTextSize="12dp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

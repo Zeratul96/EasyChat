@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_padding_space"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/words_content"
+    android:id="@+id/main_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/layout_padding_space">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/view_padding_space"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/small_info_text_size"
+            android:id="@+id/time" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/view_padding_space"
+            android:paddingEnd="@dimen/view_padding_space"
+            android:text="删除"
+            android:textColor="@color/red"
+            android:textSize="@dimen/small_info_text_size"
+            android:id="@+id/deletion" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:padding="@dimen/view_padding_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/info_text_size"
+        android:textColor="@color/black"
+        android:id="@+id/content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/small_info_text_size"
+        android:gravity="end"
+        android:id="@+id/author" />
+
+</LinearLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <!--内容区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <!-- 第一模块区-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:weightSum="1"
+            android:background="@drawable/person_background"
+            android:id="@+id/account_layout">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:id="@+id/sculpture_image" />
+
+            <TextView
+                android:padding="@dimen/view_padding_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/gray_text"
+                android:textSize="@dimen/label_text_size"
+                android:textStyle="bold"
+                android:id="@+id/nickname" />
+
+            <TextView
+                android:paddingStart="@dimen/view_padding_space"
+                android:paddingEnd="@dimen/view_padding_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"
+                android:id="@+id/id" />
+
+        </LinearLayout>
+        <!--第一模块区结束-->
+
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_height"
+            android:background="@color/background_gray" />
+
+
+
+        <!--第二模块区开始-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/album_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:src="@drawable/album"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/picture_text_space"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="相册"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/comments_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:src="@drawable/comments"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/picture_text_space"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="消息与回复"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line2" />
+        <!--第二模块区结束-->
+
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_height"
+            android:background="@color/background_gray" />
+
+
+
+        <!--第三模块区开始-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line3" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/settings_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:src="@drawable/settings"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/picture_text_space"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="设置"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line4" />
+        <!--第三模块区结束-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

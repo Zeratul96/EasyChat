@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space">
+
+            <TextView
+                android:text="易聊号"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+
+            <com.bs.widget.ClearEditText
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:layout_width="0dp"
+                android:drawableRight="@drawable/gray_text_clear"
+                android:layout_height="25dp"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"
+                android:maxLength="12"
+                android:background="@null"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="用于登录易聊的账号"
+                android:textColorHint="@color/gray_text"
+                android:layout_weight="1"
+                android:id="@+id/account_edit" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/small_gap_height"
+            android:background="@color/background_gray"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space">
+
+            <TextView
+                android:text="密码"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"/>
+
+            <com.bs.widget.ClearEditText
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:layout_width="0dp"
+                android:drawableRight="@drawable/gray_text_clear"
+                android:layout_height="25dp"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/text_size"
+                android:maxLines="1"
+                android:maxLength="12"
+                android:background="@null"
+                android:hint="用于进行身份验证"
+                android:textColorHint="@color/gray_text"
+                android:layout_weight="1"
+                android:id="@+id/password_edit"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="@dimen/list_margin_start"
+        android:text="易聊号由字母和数字构成，它是您在易聊的唯一身份标识，因此必须是独一无二的。您的默认昵称为易聊号本身，稍后可在个人信息中修改。注意：注册成功后将无法修改易聊号。"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/small_info_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_gray"
+        android:padding="@dimen/view_padding_space"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <Button
+            android:text="注册并登录"
+            android:enabled="false"
+            android:textSize="@dimen/label_text_size"
+            android:textColor="@drawable/blue_text_color"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:background="@drawable/blue_button"
+            android:id="@+id/register_btn"
+            android:layout_weight="0.9" />
+    </LinearLayout>
+
+
+</LinearLayout>

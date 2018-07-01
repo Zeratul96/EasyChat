@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#FF0000</color>
+
+    <color name="theme_color">#513DB0</color><!--主题色：智慧蓝-->
+
+    <!--字体颜色-->
+    <color name="gray_text">#8c8c8c</color>
+    <color name="black_text">#000000</color>
+
+    <color name="text_color">#ffffff</color>
+    <color name="text_color_unable">#70FFFFFF</color>
+    <color name="purple_text_pressed">#a785ff</color>
+    <color name="blue_text_pressed">#86CBE5</color>
+    <color name="red_text_pressed">#edb3b2</color>
+
+    <!--按钮-->
+    <color name="blue_button_unable">#701EB9F2</color>
+    <color name="blue_button">#1EB9F2</color>
+    <color name="blue_button_pressed">#0E98CB</color>
+
+    <color name="red_button_unable">#70e64340</color>
+    <color name="red_button_pressed">#cd3c39</color>
+    <color name="red_button">#e64340</color>
+
+    <!--背景和线-->
+    <color name="no_picture">#EEEEEE</color>
+    <color name="line_gray">#d9d9d9</color>
+    <color name="pressed_background">#d9d9d9</color>
+    <color name="line_black">#000000</color>
+    <color name="background_gray">#efeff4</color>
+    <color name="white">#ffffff</color>
+    <color name="navigation_gray">#f5f5f7</color>
+    <color name="navigation_content_gray">#7a7e83</color>
+    <color name="title_gray">#f9f9f9</color>
+    <color name="picture_selector_pressed">#50f1f1f5</color>
+    <color name="picture_selector">#50FFFFFF</color>
+    <color name="sculpture_title_background">#151419</color>
+
+    <color name="partTranslucent">#39000000</color>
+
+</resources>

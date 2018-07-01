@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/request_add_friend_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="朋友验证"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+
+        <TextView
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="@dimen/important_info_text_size"
+            android:textColor="@drawable/purple_btn_color"
+            android:clickable="true"
+            android:id="@+id/cancel_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="@drawable/purple_btn_color"
+            android:textSize="@dimen/important_info_text_size"
+            android:clickable="true"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/list_margin_start"
+            android:id="@+id/send_btn" />
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <TextView
+        android:layout_marginStart="5dp"
+        android:padding="@dimen/label_padding"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/info_text_size"
+        android:text="你需要发送验证申请，等对方通过"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title0" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"
+        android:id="@+id/line0" />
+    <com.bs.widget.ClearEditText
+        android:padding="@dimen/setting_edit_padding"
+        android:textColor="@color/black_text"
+        android:textSize="@dimen/info_text_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:maxLength="50"
+        android:drawableRight="@drawable/gray_text_clear"
+        android:background="@color/white"
+        android:id="@+id/reason_edit_text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"
+        android:layout_marginBottom="@dimen/small_gap_height"
+        android:id="@+id/line1" />
+
+    <TextView
+        android:text="备注名"
+        android:layout_marginStart="5dp"
+        android:padding="@dimen/label_padding"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/info_text_size"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+    <com.bs.widget.ClearEditText
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/setting_edit_padding"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:drawableRight="@drawable/gray_text_clear"
+        android:textSize="@dimen/info_text_size"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:id="@+id/remark_edit_text"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/small_gap_height"
+        android:text="描述"
+        android:layout_marginStart="5dp"
+        android:padding="@dimen/label_padding"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/info_text_size"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+    <EditText
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:layout_width="match_parent"
+        android:textColor="@color/black_text"
+        android:layout_height="140dp"
+        android:textSize="@dimen/info_text_size"
+        android:maxLength="150"
+        android:maxLines="10"
+        android:background="@color/white"
+        android:gravity="top"
+        android:padding="@dimen/setting_edit_padding"
+        android:id="@+id/description_edit_text" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+</LinearLayout>

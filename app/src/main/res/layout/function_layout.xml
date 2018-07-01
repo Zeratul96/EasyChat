@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="功能"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_padding"/>
+
+
+        <!--第一模块区开始-->
+        <LinearLayout
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="-  和朋友一起互动吧  -"
+                    android:textSize="@dimen/info_text_size"
+                    android:textColor="@color/gray_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_gray"/>
+
+            </LinearLayout>
+            <com.bs.widget.MyGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#00FFFFFF"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/grid_padding"
+                android:horizontalSpacing="@dimen/grid_padding"
+                android:id="@+id/society_grid_view">
+            </com.bs.widget.MyGridView>
+        </LinearLayout>
+        <!--第一模块区结束-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_height"/>
+
+
+        <!--第二模块区开始-->
+        <LinearLayout
+                android:elevation="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <TextView
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="-  记录生活的点滴  -"
+                    android:textSize="@dimen/info_text_size"
+                    android:textColor="@color/gray_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_gray"/>
+                <LinearLayout
+                    android:background="@drawable/layout_color"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/layout_padding_space"
+                    android:id="@+id/note_layout">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/list_margin_start"
+                        android:src="@drawable/note"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="@dimen/picture_text_space"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="备忘录"
+                            android:textColor="@color/black_text"
+                            android:textSize="@dimen/list_text_size" />
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="@dimen/picture_text_space"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="重要的东西全都可以记录在这里哟"
+                            android:textColor="@color/gray_text"
+                            android:textSize="@dimen/info_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_gray"
+                    android:layout_marginStart="@dimen/line_margin_start"
+                    android:id="@+id/separate" />
+                <LinearLayout
+                    android:background="@drawable/layout_color"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/diary_layout"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/layout_padding_space" >
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="@dimen/list_margin_start"
+                        android:src="@drawable/diary"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="@dimen/picture_text_space"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="日记"
+                            android:textColor="@color/black_text"
+                            android:textSize="@dimen/list_text_size" />
+
+                        <TextView
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="@dimen/picture_text_space"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="把每天发生的趣事都记录在这里吧"
+                            android:textColor="@color/gray_text"
+                            android:textSize="@dimen/info_text_size" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        <!--第二模块区结束-->
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_height"/>
+
+
+        <!--第三模块区开始-->
+        <LinearLayout
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="-  想看的都为你准备好了  -"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+            <com.bs.widget.MyGridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="#00FFFFFF"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/grid_padding"
+                android:horizontalSpacing="@dimen/grid_padding"
+                android:id="@+id/link_grid_view">
+            </com.bs.widget.MyGridView>
+        </LinearLayout>
+        <!--第三模块区结束-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_padding"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

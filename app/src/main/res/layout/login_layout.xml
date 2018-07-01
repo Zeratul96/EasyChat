@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 登录界面-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.bs.widget.ClearEditText
+                android:id="@+id/user_id"
+                android:textColor="@color/black_text"
+                android:drawableRight="@drawable/blue_text_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:background="@drawable/round_shape"
+                android:padding="10dp"
+                android:hint="请输入易聊号"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:textColorHint="@color/gray_text"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size">
+            </com.bs.widget.ClearEditText>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <com.bs.widget.ClearEditText
+                android:id="@+id/password"
+                android:textColor="@color/black_text"
+                android:drawableRight="@drawable/blue_text_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:background="@drawable/round_shape"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:hint="请输入密码"
+                android:textColorHint="@color/gray_text"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size">
+            </com.bs.widget.ClearEditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center">
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/view" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="新用户注册"
+                    android:clickable="true"
+                    android:textColor="@drawable/register_text_btn_color"
+                    android:layout_width="wrap_content"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/register_btn" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <Button
+                android:text="登  录"
+                android:enabled="false"
+                android:textSize="@dimen/label_text_size"
+                android:textColor="@drawable/blue_text_color"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:background="@drawable/blue_button"
+                android:id="@+id/login_button"
+                android:layout_weight="0.9" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

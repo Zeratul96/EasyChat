@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/layout_padding_space"
+    android:background="@color/background_gray"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/moments_label">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/sculpture" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#646464"
+                    android:id="@+id/name"
+                    android:text="Zeratul" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/view_padding_space"
+                    android:paddingEnd="@dimen/view_padding_space"
+                    android:text="删除"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/small_info_text_size"
+                    android:id="@+id/deletion" />
+                
+            </LinearLayout>
+
+           
+
+            <TextView
+                android:text="2017/7/8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:textColor="@color/gray_text"
+                android:gravity="bottom"
+                android:id="@+id/date" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/moments_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="4dp">
+
+        <TextView
+            android:padding="@dimen/view_padding_space"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/info_text_size"
+            android:textColor="@color/black"
+            android:id="@+id/content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <com.bs.widget.MyGridView
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="#00FFFFFF"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:horizontalSpacing="@dimen/grid_padding"
+            android:verticalSpacing="@dimen/grid_padding"
+            android:stretchMode="columnWidth"
+            android:id="@+id/grid_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/moments_label">
+
+        <TextView
+            android:textSize="16dp"
+            android:textColor="@color/gray_text"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10人喜欢"
+            android:id="@+id/favorite_num" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/gray_favorite"
+            android:id="@+id/like" />
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/gray_comment"
+            android:id="@+id/comment" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

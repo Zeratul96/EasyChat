@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray">
+
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/important_info_text_size"
+        android:text="今日朋友中的最靓照片"/>
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/convenient_banner"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:elevation="8dp"/>
+
+    <TextView
+        android:text="今天还没有靓照哟，赶紧发张照片抢头条吧！"
+        android:gravity="center"
+        android:textSize="@dimen/important_info_text_size"
+        android:textColor="@color/gray_text"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/no_recommend" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+</LinearLayout>
+
+

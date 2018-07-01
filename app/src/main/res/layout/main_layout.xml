@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.bs.main.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="@color/background_gray"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="#a7a7ab"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"/>
+
+        <RadioGroup
+            android:id="@+id/main_bottom_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/navigation_gray"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/message"
+                android:paddingTop="@dimen/navigation_drawable_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/navigation_drawable_padding"
+                android:drawableTop="@drawable/message_selector"
+                android:gravity="bottom|center_horizontal"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="易聊"
+                android:textColor="@drawable/navigation_text_selector" />
+
+            <RadioButton
+                android:id="@+id/contact"
+                android:paddingTop="@dimen/navigation_drawable_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/navigation_drawable_padding"
+                android:drawableTop="@drawable/contact_selector"
+                android:gravity="bottom|center_horizontal"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="通讯录"
+                android:textColor="@drawable/navigation_text_selector" />
+
+            <RadioButton
+                android:id="@+id/function"
+                android:paddingTop="@dimen/navigation_drawable_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/navigation_drawable_padding"
+                android:drawableTop="@drawable/function_selector"
+                android:gravity="bottom|center_horizontal"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="功能"
+                android:textColor="@drawable/navigation_text_selector" />
+
+            <RadioButton
+                android:id="@+id/person"
+                android:paddingTop="@dimen/navigation_drawable_padding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawablePadding="@dimen/navigation_drawable_padding"
+                android:drawableTop="@drawable/person_selector"
+                android:gravity="bottom|center_horizontal"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:text="我"
+                android:textColor="@drawable/navigation_text_selector" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</LinearLayout>

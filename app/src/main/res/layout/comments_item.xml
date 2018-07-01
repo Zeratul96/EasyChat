@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="@dimen/layout_padding_space">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/sculpture" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#646464"
+                    android:id="@+id/name"
+                    android:text="Zeratul" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/view_padding_space"
+                    android:paddingEnd="@dimen/view_padding_space"
+                    android:text="删除"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/small_info_text_size"
+                    android:id="@+id/deletion" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:text="2017/7/8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:textColor="@color/gray_text"
+                android:gravity="bottom"
+                android:id="@+id/date" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="55dp"
+        android:padding="@dimen/view_padding_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/info_text_size"
+        android:textColor="@color/black"
+        android:id="@+id/main_content"
+        android:text="这段文字用来测试，效果可供参考。这段文字用来测试，效果可供参考" />
+
+    <com.bs.widget.MyListView2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/call_back">
+    </com.bs.widget.MyListView2>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+</LinearLayout>

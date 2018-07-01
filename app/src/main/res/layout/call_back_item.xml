@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="60dp"
+    android:background="@color/white"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:textSize="@dimen/important_info_text_size"
+        android:textColor="@color/black"
+        android:text="Zeratul  回复  11："
+        android:id="@+id/call_back_info" />
+
+    <TextView
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/info_text_size"
+        android:textColor="@color/black"
+        android:text="sndfjsdahfnlaksdfnlaksdfadk;jfkl;sdajflkasdjflkasd;jf;lksadjfk;asdjfl;asdjfa;sdljf"
+        android:id="@+id/call_back_content" />
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="社交资料"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="个性签名"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text"
+                android:layout_weight="0.8"
+                android:textSize="@dimen/info_text_size"
+                android:id="@+id/handwriting_view" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"/>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="真实姓名"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text"
+                android:maxLines="1"
+                android:layout_weight="0.8"
+                android:textSize="@dimen/info_text_size"
+                android:id="@+id/true_name_view" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/background_gray"
+            android:layout_height="@dimen/gap_height"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="电话号码"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text"
+                android:layout_weight="0.8"
+                android:textSize="@dimen/info_text_size"
+                android:id="@+id/tel_view" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"/>
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center_vertical"
+                android:text="邮箱"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_text"
+                android:maxLines="2"
+                android:layout_weight="0.8"
+                android:textSize="@dimen/info_text_size"
+                android:id="@+id/email_view" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/self_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_height"/>
+        <TextView
+            android:text="个人简介"
+            android:paddingTop="@dimen/label_padding"
+            android:paddingBottom="@dimen/label_padding"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:textColor="@color/gray_text"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/info_text_size"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black_text"
+            android:layout_height="260dp"
+            android:textSize="@dimen/info_text_size"
+            android:background="@color/white"
+            android:gravity="top"
+            android:padding="@dimen/view_padding_space"
+            android:id="@+id/introduction_view"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"/>
+    </LinearLayout>
+
+</LinearLayout>

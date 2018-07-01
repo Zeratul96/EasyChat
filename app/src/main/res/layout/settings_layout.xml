@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:padding="@dimen/title_text_padding_space"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_text_size"
+        android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <!--内容区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--第一模块区-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/account_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="修改账号密码"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:id="@+id/line1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="新消息通知"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line_gray"
+            android:layout_height="1px"
+            android:id="@+id/line2" />
+        <!--第一模块区结束-->
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_height"
+            android:background="@color/background_gray"/>
+
+
+        <!--第二模块区开始-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line3" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/moments_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="那一刻"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:id="@+id/line4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/diary_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="日记"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line_gray"
+            android:layout_height="1px"
+            android:id="@+id/line5" />
+        <!--第二模块区结束-->
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_height"
+            android:background="@color/background_gray"/>
+
+
+
+        <!--第三模块区开始-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line6" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="关于易聊"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line7" />
+
+        <!--第三模块区结束-->
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/gap_height"
+            android:background="@color/background_gray"/>
+
+
+        <!--第四模块区开始-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line8" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout_layout"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="退出登录"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line9" />
+        <!--第四模块区结束-->
+
+    </LinearLayout>
+
+</LinearLayout>

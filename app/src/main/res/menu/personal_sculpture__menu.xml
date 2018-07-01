@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+  <item android:id="@+id/action_take_photo"
+      android:title="拍照"
+      android:orderInCategory="80"
+      app:showAsAction="never" />
+
+  <item android:id="@+id/action_select_from_gallery"
+        android:title="从手机相册选择"
+        android:orderInCategory="90"
+        app:showAsAction="never" />
+
+
+</menu>

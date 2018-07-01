@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/background_gray">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/back_layout">
+
+            <ImageView
+                android:id="@+id/backView"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/black_back_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textSize="@dimen/important_info_text_size"
+                android:textColor="@color/black_text"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="3dp"
+            android:indeterminateOnly="false"
+            android:visibility="gone"
+            android:progressDrawable="@drawable/web_progress"
+            />
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView">
+        </WebView>
+    </LinearLayout>
+
+
+</LinearLayout>

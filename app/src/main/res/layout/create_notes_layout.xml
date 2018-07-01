@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/create_notes_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/back_layout">
+
+            <ImageView
+                android:id="@+id/backView"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@drawable/black_back_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:textSize="@dimen/important_info_text_size"
+                android:textColor="@color/black_text"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/important_info_text_size"
+            android:clickable="true"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/list_margin_start"
+            android:id="@+id/finish_btn" />
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/gray_text"
+                android:gravity="center"
+                android:textSize="@dimen/small_info_text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detail_date" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black_text"
+                android:background="@color/background_gray"
+                android:paddingStart="@dimen/edit_padding"
+                android:paddingEnd="@dimen/edit_padding"
+                android:paddingBottom="@dimen/edit_padding"
+                android:paddingTop="@dimen/setting_edit_padding"
+                android:textCursorDrawable="@drawable/my_cursor"
+                android:id="@+id/editText" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

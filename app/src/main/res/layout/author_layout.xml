@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/author_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="联系作者"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/qq_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/picture_text_space"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/qq"
+                android:text="QQ"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1327381035"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/picture_text_space"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/email"
+                android:text="邮箱"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1327381035@qq.com"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/wechat_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/picture_text_space"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/wechat"
+                android:text="微信"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A1327381035"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weibo_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/picture_text_space"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/weibo"
+                android:text="微博"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zeratul____"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tel_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/picture_text_space"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/tel"
+                android:text="电话"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13815012389"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line5" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

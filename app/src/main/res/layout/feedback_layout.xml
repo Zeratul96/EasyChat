@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:background="@color/background_gray">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="意见与反馈"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <TextView
+        android:text="快速反馈"
+        android:paddingTop="@dimen/label_padding"
+        android:paddingBottom="@dimen/label_padding"
+        android:layout_marginStart="@dimen/line_margin_start"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/info_text_size"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"
+        android:id="@+id/line0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/error"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.80"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:text="闪退"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/error_button" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:id="@+id/line1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stack"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_text"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:text="卡顿"
+                android:textSize="@dimen/list_text_size" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/stack_button"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:id="@+id/line2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space"
+            android:id="@+id/down">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black_text"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:text="死机"
+                android:textSize="@dimen/list_text_size" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/down_button" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:id="@+id/line3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/layout_padding_space"
+            android:id="@+id/UI_problem">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black_text"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:text="界面错位"
+                android:textSize="@dimen/list_text_size" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/UI_button" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"
+        android:id="@+id/line4" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:text="其他异常反馈"
+        android:paddingTop="@dimen/label_padding"
+        android:paddingBottom="@dimen/label_padding"
+        android:textSize="@dimen/info_text_size"
+        android:layout_marginStart="@dimen/line_margin_start"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+    <EditText
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:layout_width="match_parent"
+        android:textColor="@color/black_text"
+        android:layout_height="140dp"
+        android:hint="请简要描述你的问题和意见（150字以内）"
+        android:textColorHint="@color/gray_text"
+        android:textSize="@dimen/text_size"
+        android:maxLength="150"
+        android:maxLines="10"
+        android:background="@color/white"
+        android:gravity="top"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/detail_feedback"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background_gray"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <Button
+            android:text="提  交"
+            android:enabled="false"
+            android:textSize="@dimen/label_text_size"
+            android:textColor="@drawable/blue_text_color"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:id="@+id/commit_btn"
+            android:background="@drawable/blue_button"
+            android:layout_weight="0.9" />
+    </LinearLayout>
+</LinearLayout>

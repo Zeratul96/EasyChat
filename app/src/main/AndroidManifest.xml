@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bs.easy_chat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.bs.welcome.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bs.main.MainActivity" />
+        <activity android:name="com.bs.welcome.LoginActivity" />
+        <activity android:name="com.bs.person.settings.SettingsActivity" />
+        <activity android:name="com.bs.person.settings.AboutActivity" />
+        <activity android:name="com.bs.person.settings.AuthorActivity" />
+        <activity android:name="com.bs.person.settings.FeedbackActivity" />
+        <activity android:name="com.bs.welcome.RegisterActivity" />
+        <activity android:name="com.bs.person.person_center.PersonalCenterActivity" />
+        <activity android:name="com.bs.person.person_center.NicknameActivity" />
+        <activity android:name="com.bs.person.person_center.MoreActivity" />
+        <activity android:name="com.bs.person.person_center.TelActivity" />
+        <activity android:name="com.bs.person.person_center.NameActivity" />
+        <activity android:name="com.bs.person.person_center.EMailActivity" />
+        <activity android:name="com.bs.person.person_center.HandWritingActivity" />
+        <activity android:name="com.bs.person.person_center.IntroductionActivity" />
+        <activity android:name="com.bs.person.person_center.GenderActivity" />
+        <activity android:name="com.bs.person.person_center.AreaActivity" />
+        <activity android:name="com.bs.person.person_center.CityActivity" />
+        <activity
+            android:name="com.bs.person.person_center.SculptureActivity"
+            android:theme="@style/ImageTheme" />
+        <activity android:name="com.bs.function.ShoppingActivity" />
+        <activity android:name="com.bs.person.settings.PasswordActivity" />
+        <activity android:name="com.bs.function.WebActivity" />
+        <activity android:name="com.bs.function.SearchActivity" />
+        <activity android:name="com.bs.function.RecommendActivity" />
+        <activity android:name="com.bs.function.notes.NotesActivity" />
+        <activity android:name="com.bs.function.notes.CreateNotesActivity" />
+        <activity android:name="com.bs.function.diary.DiaryActivity" />
+        <activity
+            android:name="com.bs.function.diary.CreateDiaryActivity"
+            android:exported="true" />
+
+        <provider
+            android:name="com.bs.database.MyContentProvider"
+            android:authorities="easy_chat.provider.data" />
+
+        <activity
+            android:name="com.bs.function.diary.ImageActivity"
+            android:theme="@style/ImageTheme" />
+        <activity android:name="com.bs.person.settings.MessageSettingsActivity" />
+        <activity android:name="com.bs.person.settings.MomentSettingsActivity" />
+        <activity android:name="com.bs.person.settings.DiarySettingsActivity" />
+        <activity android:name="com.bs.main.friends.FriendDetailActivity" />
+        <activity android:name="com.bs.main.friends.FriendSettingsActivity" />
+        <activity android:name="com.bs.main.friends.RemarkNameActivity" />
+        <activity android:name="com.bs.main.friends.FriendMoreActivity" />
+        <activity android:name="com.bs.main.friends.FriendSculptureActivity" />
+        <activity android:name="com.bs.main.friends.ComplainActivity" />
+
+        <service
+            android:name="com.bs.service.MainService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.bs.main.friends.AddFriendsActivity" />
+        <activity android:name="com.bs.main.friends.ProtentialFriendActivity" />
+        <activity android:name="com.bs.main.chat.ChatActivity" />
+        <activity android:name="com.bs.function.moments.MomentsActivity" />
+        <activity android:name="com.bs.function.secret.SecretActivity" />
+        <activity
+            android:name="com.bs.function.words.WordsActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity android:name="com.bs.function.words.WriteWordsActivity" />
+        <activity android:name="com.bs.function.secret.WriteSecretActivity" />
+        <activity android:name="com.bs.function.moments.CreateMomentsActivity" />
+        <activity
+            android:name="com.bs.function.moments.ImageActivity"
+            android:theme="@style/ImageTheme" />
+        <activity android:name="com.bs.function.comment.CommentActivity" />
+        <activity android:name="com.bs.person.call_back.CallBackActivity" />
+        <activity android:name="com.bs.function.moments.MsgActivity" />
+        <activity android:name="com.bs.person.album.PersonAlbumActivity" />
+        <activity android:name="com.bs.main.friends.RequestAddFriendActivity" />
+        <activity android:name="com.bs.main.friends.AgreeAddFriendActivity"/>
+    </application>
+
+</manifest>

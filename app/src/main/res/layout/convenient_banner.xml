@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:background="#7A7CF2"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="0.27"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/layout_padding_space">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@color/no_picture"
+            android:id="@+id/sculpture" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="@dimen/label_text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="Zeratul"
+            android:id="@+id/name" />
+
+        <TextView
+            android:gravity="center_horizontal|top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/info_text_size"
+            android:layout_weight="1"
+            android:text="19:56"
+            android:id="@+id/time" />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/important_info_text_size"
+            android:text="15人喜欢"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/like_num" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.73"
+        android:scaleType="centerCrop"
+        android:id="@+id/image" />
+
+</LinearLayout>

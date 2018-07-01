@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/create_diary_layout"
+    android:layout_width="match_parent"
+    android:background="@color/title_gray"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:background="@color/theme_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/title_text_size"
+            android:maxLines="1"
+            android:maxLength="10"
+            android:id="@+id/title_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="@dimen/important_info_text_size"
+            android:textColor="@drawable/purple_btn_color"
+            android:clickable="true"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:id="@+id/cancel_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发表"
+            android:enabled="false"
+            android:textColor="@drawable/purple_btn_color"
+            android:textSize="@dimen/important_info_text_size"
+            android:clickable="true"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/list_margin_start"
+            android:id="@+id/finish_btn" />
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="写些那一刻的感受吧..."
+            android:textColorHint="@color/gray_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black_text"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:padding="@dimen/edit_padding"
+            android:id="@+id/editText"
+            android:gravity="top"
+            android:minLines="5"
+            android:maxLines="5"
+            android:inputType="textMultiLine" />
+        <requestFocus/>
+    </LinearLayout>
+
+
+    <com.bs.widget.MyGridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="#00FFFFFF"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/grid_padding"
+        android:horizontalSpacing="@dimen/grid_padding"
+        android:stretchMode="columnWidth"
+        android:id="@+id/grid_view" />
+
+</LinearLayout>

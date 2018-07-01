@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/friend_settings_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bs.main.friends.FriendSettingsActivity"
+    android:background="@color/background_gray">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="资料设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--第一模块区-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/remark_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="设置备注和描述"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line1" />
+        <!--第一模块区结束-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_height"
+            android:background="@color/background_gray"/>
+
+
+
+
+        <!--第二模块区开始-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:gravity="center_vertical"
+                android:text="不让他看我的那一刻"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <com.bs.widget.MyToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/stealth_self_btn" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:layout_marginStart="@dimen/line_margin_start"
+            android:id="@+id/line3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="不看他的那一刻"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+
+            <com.bs.widget.MyToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/shield_moments_btn" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line4" />
+        <!--第二模块区结束-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gap_height"
+            android:background="@color/background_gray"/>
+
+        <!--第三模块区开始-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line5" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/complain_layout"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:padding="@dimen/layout_padding_space" >
+            <TextView
+                android:layout_marginStart="@dimen/list_margin_start"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="投诉"
+                android:textColor="@color/black_text"
+                android:textSize="@dimen/list_text_size" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_gray"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_gray"
+            android:id="@+id/line6" />
+        <!--第三模块区结束-->
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gap_height"/>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_weight="0.9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/label_text_size"
+            android:textColor="@drawable/red_text_color"
+            android:background="@drawable/red_button"
+            android:text="删除"
+            android:id="@+id/del_btn" />
+
+    </LinearLayout>
+
+</LinearLayout>

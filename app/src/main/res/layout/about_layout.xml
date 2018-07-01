@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="com.bs.person.settings.AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="关于易聊"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="华北理工大学14级通信1班许可毕业设计"
+        android:textColor="@color/gray_text"
+        android:textSize="@dimen/small_info_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/text_to_bottom" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentStart="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/logo"
+            android:id="@+id/imageView"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black_text"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:text="易聊" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/version"
+            android:textSize="@dimen/important_info_text_size"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:paddingBottom="50dp"
+            android:text="v 0.1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"
+                android:id="@+id/line0" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedback_layout"
+                android:gravity="center_vertical"
+                android:padding="@dimen/layout_padding_space" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/list_margin_start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="意见与反馈"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/list_text_size" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow_gray"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"
+                android:layout_marginStart="@dimen/line_margin_start"
+                android:id="@+id/line1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/author_layout"
+                android:gravity="center_vertical"
+                android:padding="@dimen/layout_padding_space" >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_marginStart="@dimen/list_margin_start"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="联系作者"
+                    android:textColor="@color/black_text"
+                    android:textSize="@dimen/list_text_size" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow_gray"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/line_gray"
+                android:layout_height="1px"
+                android:id="@+id/line2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

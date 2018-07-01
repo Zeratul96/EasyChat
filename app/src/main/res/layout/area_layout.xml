@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_gray">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="设置地区"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+
+        <TextView
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="@dimen/important_info_text_size"
+            android:textColor="@drawable/purple_btn_color"
+            android:clickable="true"
+            android:id="@+id/cancel_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="@drawable/purple_btn_color"
+            android:textSize="@dimen/important_info_text_size"
+            android:clickable="true"
+            android:enabled="false"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/list_margin_start"
+            android:id="@+id/finish_btn" />
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:id="@+id/content_layout">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_padding"
+                android:background="@color/background_gray"
+                android:id="@+id/padding_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line_gray"/>
+
+
+            <com.bs.widget.MyListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:listSelector="@color/white"
+                android:id="@+id/list_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/line_gray"
+                android:layout_height="1px" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_padding"
+                android:background="@color/background_gray"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

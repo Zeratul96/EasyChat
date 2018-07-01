@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/layout_padding_space">
+
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/info_text_size"
+            android:id="@+id/date" />
+
+        <TextView
+            android:gravity="center"
+            android:padding="@dimen/view_padding_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/important_info_text_size"
+            android:id="@+id/title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/view_padding_space"
+            android:paddingEnd="@dimen/view_padding_space"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/black_text"
+            android:id="@+id/content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <com.bs.widget.MyGridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#00FFFFFF"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/grid_padding"
+            android:horizontalSpacing="@dimen/grid_padding"
+            android:stretchMode="columnWidth"
+            android:id="@+id/grid_view" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:paddingBottom="15dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="end">
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/blue_button"
+                android:textColor="@drawable/blue_text_color"
+                android:textSize="@dimen/info_text_size"
+                android:text="发布"
+                android:elevation="6dp"
+                android:id="@+id/deploy_btn" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/red_button"
+                android:textColor="@drawable/red_text_color"
+                android:textSize="@dimen/info_text_size"
+                android:text="删除"
+                android:elevation="6dp"
+                android:id="@+id/del_btn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"
+        android:background="@color/background_gray"
+        android:id="@+id/line" />
+
+
+</LinearLayout>

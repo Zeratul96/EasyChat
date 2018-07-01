@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/write_words_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="com.bs.function.words.WriteWordsActivity">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="写留言"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+
+        <TextView
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="@dimen/important_info_text_size"
+            android:textColor="@drawable/purple_btn_color"
+            android:clickable="true"
+            android:id="@+id/cancel_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="@drawable/purple_btn_color"
+            android:textSize="@dimen/important_info_text_size"
+            android:clickable="true"
+            android:enabled="false"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/list_margin_start"
+            android:id="@+id/finish_btn" />
+
+
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="1000"
+        android:background="@color/background_gray"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/black_text"
+        android:padding="@dimen/view_padding_space"
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:id="@+id/editText" />
+</LinearLayout>

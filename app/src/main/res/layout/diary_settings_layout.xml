@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/diary_settings_layout"
+    android:layout_width="match_parent"
+    android:background="@color/background_gray"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="日记"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:padding="@dimen/layout_padding_space" >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="时间轴显示风格"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/list_text_size" />
+        <com.bs.widget.MyToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/show_btn" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+    <TextView
+        android:text="开启后，日记界面将采用时间轴的显示风格。若采用时间轴显示风格将无法对日记执行删除、发布操作。"
+        android:padding="@dimen/view_padding_space"
+        android:textSize="@dimen/small_info_text_size"
+        android:layout_marginStart="@dimen/list_margin_start"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="213.3dp"
+                    android:src="@drawable/normal_style"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="213.3dp"
+                    android:src="@drawable/time_line_style"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_padding_space">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"
+                android:text="普通风格"
+                android:gravity="center"
+                android:padding="@dimen/view_padding_space"
+ />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/info_text_size"
+                android:textColor="@color/gray_text"
+                android:text="时间轴风格"
+                android:gravity="center"
+                android:padding="@dimen/view_padding_space" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

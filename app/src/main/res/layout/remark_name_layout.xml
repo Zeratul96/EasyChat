@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context="com.bs.main.friends.RemarkNameActivity">
+
+    <!--标题栏-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/theme_color">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/title_text_padding_space"
+            android:text="设置备注和描述"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size"
+            android:id="@+id/title_name" />
+
+        <TextView
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textSize="@dimen/important_info_text_size"
+            android:textColor="@drawable/purple_btn_color"
+            android:clickable="true"
+            android:id="@+id/cancel_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:textColor="@drawable/purple_btn_color"
+            android:textSize="@dimen/important_info_text_size"
+            android:clickable="true"
+            android:enabled="false"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="@dimen/list_margin_start"
+            android:id="@+id/finish_btn" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_padding"/>
+
+    <TextView
+        android:text="备注名"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/info_text_size"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray" />
+    <com.bs.widget.ClearEditText
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/setting_edit_padding"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:drawableRight="@drawable/gray_text_clear"
+        android:textSize="@dimen/info_text_size"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:id="@+id/remark_edit" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_gap_height"/>
+
+    <TextView
+        android:text="描述"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/gray_text"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/info_text_size"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+    <EditText
+        android:textCursorDrawable="@drawable/my_cursor"
+        android:layout_width="match_parent"
+        android:textColor="@color/black_text"
+        android:layout_height="140dp"
+        android:textSize="@dimen/info_text_size"
+        android:maxLength="150"
+        android:maxLines="10"
+        android:background="@color/white"
+        android:gravity="top"
+        android:padding="@dimen/setting_edit_padding"
+        android:id="@+id/description_edit" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_gray"/>
+
+
+</LinearLayout>

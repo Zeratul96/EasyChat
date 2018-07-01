@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:id="@+id/note_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/item_left">
+
+        <TextView
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/important_info_text_size"
+            android:maxLines="1"
+            android:paddingStart="@dimen/view_padding_space"
+            android:paddingEnd="@dimen/view_padding_space"
+            android:paddingTop="@dimen/view_padding_space"
+            android:paddingBottom="5dp"
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title" />
+
+        <TextView
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/info_text_size"
+            android:maxLines="1"
+            android:paddingStart="@dimen/view_padding_space"
+            android:paddingEnd="@dimen/view_padding_space"
+            android:paddingBottom="@dimen/view_padding_space"
+            android:layout_marginStart="@dimen/list_margin_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#FF0000" >
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableStart="@drawable/del_icon_normal"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+</LinearLayout>

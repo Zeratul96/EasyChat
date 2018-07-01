@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">易聊</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="user_not_fill">此用户未填写</string>
+    <string name="no_network">网络连接异常，请检查网络连接。</string>
+
+</resources>

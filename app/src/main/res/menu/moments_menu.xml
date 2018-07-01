@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+ <item android:id="@+id/action_message"
+       android:title="消息"
+       android:orderInCategory="80"
+       android:icon="@mipmap/no_message_icon"
+       app:showAsAction="ifRoom" />
+
+  <item android:id="@+id/action_edit"
+        android:title="发布那一刻"
+        android:orderInCategory="90"
+        android:icon="@mipmap/edit_icon"
+        app:showAsAction="ifRoom" />
+</menu>
