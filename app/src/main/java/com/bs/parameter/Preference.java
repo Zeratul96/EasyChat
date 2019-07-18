@@ -8,9 +8,9 @@ import java.util.Map;
  */
 
 public class Preference {
-    public static final String serverAddress = "192.168.186.1";
-    public static final String pictureServer = "192.168.186.1";
-    public static final String chatServer = "192.168.186.1";
+    public static final String serverAddress = "192.168.15.1";
+    public static final String pictureServer = "192.168.15.1";
+    public static final String chatServer = "192.168.15.1";
     public static Map<String, String> userInfoMap;
 
     /**

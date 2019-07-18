@@ -2,12 +2,11 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.bs.easy_chat"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -21,25 +20,25 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile files('libs/commons-beanutils.jar')
-    compile files('libs/commons-collections.jar')
-    compile files('libs/commons-lang.jar')
-    compile files('libs/commons-logging.jar')
-    compile files('libs/ezmorph-1.0.6.jar')
-    compile files('libs/json-lib-2.4-jdk15.jar')
-    compile project(':library')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
-    compile project(':indexlib')
-    compile project(':xrecyclerview')
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    compile 'com.bigkoo:convenientbanner:2.0.5'
-    compile 'com.android.support:design:26.0.0-alpha1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
+    implementation files('libs/commons-beanutils.jar')
+    implementation files('libs/commons-collections.jar')
+    implementation files('libs/commons-lang.jar')
+    implementation files('libs/commons-logging.jar')
+    implementation files('libs/ezmorph-1.0.6.jar')
+    implementation files('libs/json-lib-2.4-jdk15.jar')
+    implementation project(':library')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation project(':indexlib')
+    implementation project(':xrecyclerview')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.bigkoo:convenientbanner:2.0.5'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
 }
 repositories {
     mavenCentral()
